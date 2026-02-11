@@ -1,0 +1,19 @@
+{
+  "devDependencies": {
+    "concurrently": "^9.2.1",
+    "eslint": "^9.39.2",
+    "eslint-plugin-import": "^2.32.0",
+    "tailwindcss": "^4.1.18",
+    "typescript": "^5.9.3"
+  },
+  "type": "module",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.18"
+  },
+  "scripts": {
+    "dev:css": "npx tailwindcss -i frontend/input.css -o ./static/dist/output.css --watch",
+    "dev:ts": "npx tsc --outDir ./static/dist --watch --preserveWatchOutput",
+    "dev:py": "python -m uvicorn backend.main:app --reload",
+    "dev": "concurrently -p \"[{name}]\" -n \"CSS,TS,PY\" -c \"magenta,cyan,green\" --kill-others-on-fail \"npm run dev:css\" \"npm run dev:ts\" \"npm run dev:py\""
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "outDir": "./static",
+    "rootDir": "./frontend",
+    "strict": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "resolveJsonModule": true,
+    "baseUrl": "./frontend"
+  },
+  "include": [
+    "frontend"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
