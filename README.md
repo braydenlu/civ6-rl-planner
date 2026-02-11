@@ -7,7 +7,7 @@ Meier’s Civilization VI*. It consists of three components:
 2. A backend service for yield computation, validation, and agent inference.
 3. A Gymnasium-compatible reinforcement learning environment for training agents to optimize district placement.
 
-<img width="1917" height="963" alt="example_image_1" src="https://github.com/user-attachments/assets/bb9ecbbe-d8aa-4ebb-bb4b-e8b12c0fd644" />
+<img width="1917" height="963" alt="example_image_1" src="example_image_1.png" />
 
 ---
 
